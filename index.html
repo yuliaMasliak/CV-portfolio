@@ -85,7 +85,7 @@
 
     <main>
       <div class="container">
-        <div class="row bg-light profile-summary">
+        <div class="bg-light profile-summary">
           <h2 class="profile-heading">Profile summary:</h2>
           <p id="profile">
             I've been working in marketing and public administration for the
@@ -233,7 +233,7 @@
         <div class="row" id="projects">
           <h2 class="p-heading">Projects:</h2>
         </div>
-        <div class="row">
+        <div class="projects-flex">
           <div class="col-2 text-center">
             <div class="project-head">
               <h2>Book-Shop</h2>
@@ -364,7 +364,7 @@
           </div>
         </div>
 
-        <div class="row bg-light" id="code">
+        <div class="bg-light" id="code">
           <h2 class="p-heading">My Code expamle</h2>
           <p class="kata"><7kyu> Find the stray number</p>
           <pre class="code-text">
@@ -372,6 +372,16 @@ function stray(numbers){
   for (let item in numbers){
      if (numbers.indexOf(numbers[item]) ===
          numbers.lastIndexOf(numbers[item])){
+         return numbers[item];
+         }
+  }
+}
+</pre
+          >
+          <pre class="code-text-320">
+function stray(numbers){
+  for (let item in numbers){
+     if(numbers.indexOf(numbers[item]) === numbers.lastIndexOf(numbers[item])){
          return numbers[item];
          }
   }

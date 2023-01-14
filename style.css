@@ -46,6 +46,10 @@ main,
 footer {
   margin: 0px auto;
 }
+.projects-flex {
+  display: flex;
+  column-gap: 5px;
+}
 .container {
   background-color: white;
   max-width: 1100px;
@@ -82,7 +86,7 @@ h2 {
   font-size: 16px;
 }
 .profile-summary {
-  padding-left: 50px;
+  padding: 50px;
 }
 .links {
   text-decoration: none;
@@ -116,7 +120,9 @@ h2 {
 .img-fluid {
   border-radius: 5%;
 }
+
 #skills {
+  max-width: 1600px;
   margin: 0px auto;
   padding-left: 50px;
 }
@@ -187,7 +193,55 @@ h2 {
   min-height: 165px;
   margin-bottom: 20px;
 }
+.code-text-320 {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+  .about-section {
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .hello-text {
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  .contacts {
+    text-align: left;
+    font-size: 14px;
+  }
+  .h1-about-author {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .image-block {
+    margin-top: 50px;
+  }
+  #skills {
+    max-width: 640px;
+  }
 
+  .project-head {
+    max-height: 10px;
+  }
+  .project-image {
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    font-size: 8px;
+  }
+}
 @media screen and (max-width: 320px) {
   body {
     max-width: 320px;
@@ -195,29 +249,113 @@ h2 {
   .logo {
     display: none;
   }
-
-  nav li {
-    font-size: 13px;
-    display: inline;
-    margin-right: 15px;
+  .fixed-nav ul {
+    display: flex;
+    padding-left: 0px;
+    margin: 0px auto;
+  }
+  .fixed-nav ul li {
+    font-size: 14px;
+    margin-right: 13px;
+  }
+  .navbar {
+    margin: 0px auto;
+    background-color: white;
+    max-width: 280px;
   }
   nav ul {
-    margin: 0px auto;
-    margin-left: 10px;
-    padding-left: 5px;
-    max-width: 300px;
-  }
-  .about-section {
-    padding-left: 10px;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    text-align: center;
+    margin: 15px;
   }
   .hello-text {
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: 10px;
     margin-bottom: 5px;
   }
+  .contacts {
+    text-align: left;
+    font-size: 14px;
+    min-width: 300px;
+  }
   .h1-about-author {
-    font-size: 23px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .h2-about-author {
+    font-size: 12px;
+  }
+  .image-block {
+    margin-top: 60px;
+  }
+  .about-section {
+    padding-bottom: 10px;
+  }
+  .profile-summary {
+    padding: 10px;
+    font-size: 14px;
+    min-height: 500px;
+  }
+  #skills {
+    flex-direction: column;
+    max-width: 320px;
+    padding: 10px;
+    text-align: center;
+  }
+  #skills > div:first-child {
+    width: 100%;
+  }
+  #skills > div:nth-child(2) {
+    width: 100%;
+  }
+  #skills > div:last-child {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .profile-heading {
+    padding: 10px;
+  }
+  .p-heading {
+    padding: 10px;
+  }
+  .project-head {
+    max-height: 10px;
+  }
+  .project-image {
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    font-size: 8px;
+  }
+  .years {
+    padding-left: 10px;
+  }
+  .projects-flex {
+    flex-direction: column;
+  }
+  .projects-flex .col-2 {
+    width: 290px;
+  }
+
+  .projects-flex .project-head {
+    min-height: 80px;
+  }
+  .code-text-320 {
+    margin-left: 15px;
+    padding-left: 15px;
+    display: block;
+    font-size: 10px;
+    border-left: 1px solid #5551ff;
+  }
+  .code-text {
+    display: none;
+  }
+  .kata {
+    padding-left: 5px;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+  footer {
+    font-size: 12px;
   }
 }
