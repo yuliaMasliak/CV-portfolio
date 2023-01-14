@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="fixed-nav">
-      <nav class="navbar ps-5">
+      <nav class="navbar">
         <span>
           <a href="./index.html"
             ><img
@@ -29,67 +29,79 @@
               class="logo" /></a
         ></span>
         <ul>
-          <li><a href="#profile">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#code">My Code</a></li>
+          <li><a href="#profile" title="Go to skills">Skills</a></li>
+          <li><a href="#experience" title="Go to experience">Experience</a></li>
+          <li><a href="#projects" title="Go to projects">Projects</a></li>
+          <li><a href="#code" title="Go to code sample">My Code</a></li>
         </ul>
       </nav>
     </div>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-6 about-section">
-            <div>
-              <p class="hello-text">Hi! I am</p>
-              <h1 class="h1-about-author mb-4">Yulia Masliak</h1>
-              <h2 class="h2-about-author mb-4">
-                Frontend Developer, based in Kyiv, Ukraine
-              </h2>
-              <p class="contacts">
-                <span class="contact-inf">Contact information: </span>
-                <br />
-                Phone: +38 095 2805398 <br />
-                E-mail:
-                <a href="mailto:1985kozak@gmail.com" class="links"
-                  >1985kozak@gmail.com</a
-                ><br />
-                Telegram:
-                <a href="https://t.me/yuyuliaaa" class="links">@yuyuliaaa</a
-                ><br />
-                <a
-                  href="http://linkedin.com/in/yulia-masliak-b3a6ba7a"
-                  class="links"
-                  >LinkedIn</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-6 image-block">
-            <img
-              src="./images/portrait.png"
-              class="img-fluid p-3"
-              alt="Yulia Masliak portrait" />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 about-section">
+          <div>
+            <p class="hello-text">Hi! I am</p>
+            <h1 class="h1-about-author">Yulia Masliak</h1>
+            <h2 class="h2-about-author">
+              Frontend Developer, based in Kyiv, Ukraine
+            </h2>
+            <p class="contacts">
+              <span class="contact-inf">Contact information: </span>
+              <br />
+              Phone: +38 095 2805398 <br />
+              E-mail:
+              <a
+                href="mailto:1985kozak@gmail.com"
+                class="links"
+                title="Click to send an email"
+                >1985kozak@gmail.com</a
+              ><br />
+              Telegram:
+              <a
+                href="https://t.me/yuyuliaaa"
+                class="links"
+                title="Go to Telegram chat"
+                >@yuyuliaaa</a
+              ><br />
+              <a
+                href="http://linkedin.com/in/yulia-masliak-b3a6ba7a"
+                class="links"
+                title="linkedin.com"
+                >LinkedIn</a
+              >
+            </p>
           </div>
         </div>
+        <div class="col-6 image-block">
+          <img
+            src="./images/portrait.png"
+            class="img-fluid p-3"
+            alt="Yulia Masliak portrait"
+            width="400" />
+        </div>
       </div>
-    </header>
+    </div>
+
     <main>
       <div class="container">
-        <div class="row p-5 bg-light">
+        <div class="row bg-light profile-summary">
           <h2 class="profile-heading">Profile summary:</h2>
           <p id="profile">
             I've been working in marketing and public administration for the
             past 10 years and finally decided to start learning programming as
-            it has been a my long time desire.<br /><br />
-            Since July 2022, I have been studying on my own, devoting 8 hours a
-            day to learning programming. So far I have learned JavaScript and
-            basic website layout languages HTML and CSS. I've gained experience
-            in making web pages and multi-page websites, applications on pure
-            Javascript and with implementationof API.<br /><br />
+            it has been my long time wish.<br /><br />
+            Since July 2022, I am self-studying, devoting 8 hours a day to
+            learning programming. So far I have learned JavaScript and website
+            layout languages HTML and CSS. I've gained experience in making web
+            pages and multi-page websites, applications on pure Javascript and
+            with implementation of API. Please, take look at my
+            <a href="#projects" class="projects-link" title="Go to projects">
+              projects</a
+            >. Any feedback is highly appreciated 😊<br /><br />
           </p>
         </div>
-        <div class="row ps-5 text-left" id="skills">
+        <div class="row text-left" id="skills">
           <div class="col-4">
             <h2 class="p-heading">Skills:</h2>
             <ul>
@@ -100,18 +112,33 @@
               <li>VS Code</li>
             </ul>
           </div>
-          <div class="col-4 pe-5">
+          <div class="col-4">
             <h2 class="p-heading">Courses:</h2>
             <ul>
               <li>
-                <a href="https://rs.school/" class="links">RSSchool </a> (in
-                progress): Front-End
+                <a href="https://rs.school/" class="links" title="rs.school"
+                  >RSSchool
+                </a>
+                (in progress): Front-End
               </li>
               <li>
-                <a href="https://itvdn.com/" class="links">ITVDN</a> (<a
+                <a
+                  href="https://futureinit.com.ua/"
+                  class="links"
+                  title="futureinit.com.ua"
+                  >ITEA (Future in IT)
+                </a>
+                (in progress): Web-developer
+              </li>
+              <li>
+                <a href="https://itvdn.com/" class="links" title="itvdn.com"
+                  >ITVDN</a
+                >
+                (<a
                   href="https://testprovider.com/ru/search-certificate/tp62318129"
                   target="_blank"
                   class="links"
+                  title="Open certificate"
                   >Certificate</a
                 >): JavaScript Essential
               </li>
@@ -119,18 +146,20 @@
                 <a
                   href="https://www.shecodes.io/graduates/50430-yulia-masliak"
                   class="links"
+                  title="shecodes.io"
                   >SheCodes</a
                 >
                 (<a
                   href="https://www.shecodes.io/certificates/0bebe6c836722c4777d9e0d23d38195f"
                   target="_blank"
                   class="links"
+                  title="Open certificate"
                   >Certificate</a
                 >): Frontend, Responsive, React
               </li>
             </ul>
           </div>
-          <div class="col-4 pe-5">
+          <div class="col-4">
             <h2 class="p-heading">Languages:</h2>
             <ul>
               <li>
@@ -149,54 +178,62 @@
             </ul>
           </div>
         </div>
-        <div class="row ps-5 bg-light pb-3" id="experience">
+        <div class="row bg-light" id="experience">
           <h2 class="p-heading">Experience</h2>
-          <div class="col-4 mt-1 years">
+          <div class="col-4 years">
             <ul>
-              <li>2022</li>
+              <li>2022-present</li>
             </ul>
           </div>
-          <div class="col-8 ps-5 mt-1">Learning Coding and Programming</div>
-          <div class="col-4 years mt-1">
+          <div class="col-8">Learning Coding and Programming</div>
+          <div class="col-4 years">
             <ul>
               <li>2019-2022</li>
             </ul>
           </div>
-          <div class="col-8 ps-5 mt-1">
+          <div class="col-8">
             Marketing and Public relations manager (<a
               href="https://trademaster.ua/"
               class="links"
+              title="trademaster.ua"
               >Trademaster Group</a
-            >, <a href="https://dim-bud.ua/" class="links">Dim Group</a>)
+            >,
+            <a href="https://dim-bud.ua/" class="links" title="dim-bud.ua"
+              >Dim Group</a
+            >)
           </div>
-          <div class="col-4 years mt-1">
+          <div class="col-4 years">
             <ul>
               <li>2013-2019</li>
             </ul>
           </div>
-          <div class="col-8 ps-5 mt-1">
+          <div class="col-8">
             Chief administrative officer (<a
               href="https://gerz-construction.com/"
               class="links"
+              title="gerz-construction.com"
               >GERZ Construction</a
             >)
           </div>
-          <div class="col-4 years mt-1">
+          <div class="col-4 years">
             <ul>
               <li>2008-2013</li>
             </ul>
           </div>
-          <div class="col-8 ps-5 mt-1">
-            Head of department (<a href="https://nads.gov.ua/" class="links"
+          <div class="col-8">
+            Head of department (<a
+              href="https://nads.gov.ua/"
+              class="links"
+              title="nads.gov.ua"
               >Public administration</a
             >)
           </div>
         </div>
 
-        <div class="row ps-5 mt-3" id="projects">
+        <div class="row" id="projects">
           <h2 class="p-heading">Projects:</h2>
         </div>
-        <div class="row p-3">
+        <div class="row">
           <div class="col-2 text-center">
             <div class="project-head">
               <h2>Book-Shop</h2>
@@ -212,7 +249,8 @@
             <a
               href="https://app.netlify.com/sites/rococo-donut-4c1689/overview"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to project website"
               >Learn more</a
             >
           </div>
@@ -234,7 +272,8 @@
             <a
               href="https://guileless-souffle-c5aa94.netlify.app/"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to project website"
               >Learn more</a
             >
           </div>
@@ -256,7 +295,8 @@
             <a
               href="https://github.com/yuliaMasliak/async-race-api"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to repo at GitHub"
               >Learn more</a
             >
           </div>
@@ -275,7 +315,8 @@
             <a
               href="https://fastidious-cannoli-88e429.netlify.app/"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to project website"
               >Learn more</a
             >
           </div>
@@ -296,7 +337,8 @@
             <a
               href="https://brilliant-praline-c84a06.netlify.app/index.html"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to project website"
               >Learn more</a
             >
           </div>
@@ -315,19 +357,27 @@
             <a
               href="https://flourishing-croissant-d90f66.netlify.app/"
               target="_blank"
-              class="btn btn-primary m-3"
+              class="btn btn-primary"
+              title="Go to project website"
               >Learn more</a
             >
           </div>
         </div>
 
-        <div class="row ps-5 bg-light pb-3" id="code">
+        <div class="row bg-light" id="code">
           <h2 class="p-heading">My Code expamle</h2>
-          <pre
-            class="code-text">btnResult.addEventListener("click", handleResult);<br><br>
-          function handleResult(){<br>
-          let value = 3.14*Number(userRadius.value)*Number(userRadius.value)*Number(userHeight.value); <br>
-          userResult.innerText = value;}</pre>
+          <p class="kata"><7kyu> Find the stray number</p>
+          <pre class="code-text">
+function stray(numbers){
+  for (let item in numbers){
+     if (numbers.indexOf(numbers[item]) ===
+         numbers.lastIndexOf(numbers[item])){
+         return numbers[item];
+         }
+  }
+}
+</pre
+          >
         </div>
       </div>
     </main>
@@ -340,12 +390,12 @@
               >Yulia Masliak</a
             >, and is open-sourced on
             <a
-              href="https://github.com/yuliaMasliak/rsschool-cv"
+              href="https://github.com/yuliaMasliak/CV-portfolio"
               target="_blank"
               title="Check web-site materials on GitHub"
               class="links">
               GitHub</a
-            ><br /><span id="date">October 2022, Ukraine</span>
+            ><br /><span id="date">January 2023, Ukraine</span>
           </div>
         </div>
       </div>

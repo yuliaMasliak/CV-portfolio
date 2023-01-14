@@ -2,22 +2,27 @@
   --primary-font-family: "Poppins", sans-serif;
 }
 body {
+  margin: 0px auto;
   background-color: #f8f9fa;
   font-family: var(--primary-font-family);
   padding-top: 25px;
+  max-width: 100vw;
 }
 .fixed-nav {
+  margin: 0px auto;
   position: fixed;
   top: 0px;
-  width: 100%;
+  min-width: 100vw;
+  background-color: white;
 }
 .navbar {
+  margin: 0px auto;
   background-color: white;
+  max-width: 1600px;
 }
 .logo {
   margin: 10px;
 }
-
 .navbar-links {
   display: flex;
   justify-content: space-between;
@@ -34,53 +39,71 @@ nav li a {
   text-decoration: none;
   color: black;
 }
+header {
+  margin: 0px auto;
+}
+main,
+footer {
+  margin: 0px auto;
+}
 .container {
   background-color: white;
-  max-width: 1000px;
-  margin: 60px auto;
+  max-width: 1100px;
+  margin: 0px auto;
   border-radius: 8px;
 }
 .about-section {
   padding: 45px;
   border-radius: 20%;
+  padding-left: 150px;
 }
 .hello-text {
   font-family: var(--primary-font-family);
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 44px;
+  margin-bottom: 20px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   font-family: var(--primary-font-family);
+  margin-bottom: 20px;
 }
 .contact-inf {
   text-decoration: underline;
 }
 .contacts {
-  font-size: 18px;
+  font-size: 16px;
+}
+.profile-summary {
+  padding-left: 50px;
 }
 .links {
   text-decoration: none;
   color: #5551ff;
 }
+
 .built-with {
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 10px;
 }
 .img-project {
   border: 0.1px solid #e3e3e4;
   border-radius: 7px;
 }
+
 .btn-primary {
   background-color: #5551ff;
   border: 1px solid #5551ff;
   color: white;
+  font-size: 12px;
+  margin-bottom: 30px;
 }
 .btn-primary:hover {
   background-color: white;
@@ -93,23 +116,42 @@ h2 {
 .img-fluid {
   border-radius: 5%;
 }
+#skills {
+  margin: 0px auto;
+  padding-left: 50px;
+}
+#skills > div:first-child {
+  flex: 1 0 25%;
+}
+#skills > div:nth-child(2) {
+  flex: 1 0 35%;
+}
+#skills > div:last-child {
+  flex: 1 0 35%;
+  padding-left: 30px;
+}
 .p-heading {
   font-family: "Playfair Display", serif;
-  font-weight: 800;
   font-size: 26px;
   font-weight: 500;
-  padding: 50px 50px 20px 50px;
+  padding: 20px 50px 20px 100px;
   margin-top: 40px;
 }
 .profile-heading {
   font-family: "Playfair Display", serif;
-  font-weight: 800;
   font-size: 26px;
   font-weight: 500;
   padding: 0px 50px 20px 50px;
 }
+.projects-link {
+  text-decoration: none;
+}
 #profile {
   text-align: justify;
+  max-height: 200px;
+}
+#projects {
+  max-height: 180px;
 }
 .years {
   padding-left: 90px;
@@ -135,15 +177,47 @@ h2 {
 #date {
   font-size: 14px;
 }
+.kata {
+  padding-left: 50px;
+}
 .project-head {
   min-height: 100px;
 }
 .project-image {
-  min-height: 125px;
+  min-height: 165px;
+  margin-bottom: 20px;
 }
-.btn-primary {
-  font-size: 12px;
-}
-.built-with {
-  font-size: 10px;
+
+@media screen and (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+  .logo {
+    display: none;
+  }
+
+  nav li {
+    font-size: 13px;
+    display: inline;
+    margin-right: 15px;
+  }
+  nav ul {
+    margin: 0px auto;
+    margin-left: 10px;
+    padding-left: 5px;
+    max-width: 300px;
+  }
+  .about-section {
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .hello-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .h1-about-author {
+    font-size: 23px;
+  }
 }
