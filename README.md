@@ -1,2 +1,2 @@
-# rsschool-cv
-## https://yuliamasliak.github.io/rsschool-cv/
+
+## https://cv-masliak-yulia-front-end.netlify.app/
