@@ -1,6 +1,9 @@
 :root {
   --primary-font-family: "Poppins", sans-serif;
 }
+* a:hover {
+  color: rgb(92, 56, 209);
+}
 body {
   margin: 0px auto;
   background-color: #f8f9fa;
@@ -42,6 +45,10 @@ nav li {
 nav li a {
   text-decoration: none;
   color: black;
+}
+.image-block img {
+  width: 400px;
+  border-radius: 8px;
 }
 .header-block {
   display: flex;
@@ -88,6 +95,9 @@ h2 {
 .contacts {
   font-size: 16px;
 }
+.contacts a:hover {
+  color: rgb(92, 56, 209);
+}
 .profile-summary {
   padding: 50px;
   background-color: #f8f9fa;
@@ -99,6 +109,7 @@ h2 {
 
 .built-with {
   font-size: 10px;
+  margin: 0px auto;
   margin-bottom: 10px;
   max-width: 130px;
   min-height: 65px;
@@ -138,19 +149,8 @@ h2 {
   display: flex;
   max-width: 1600px;
   margin: 0px auto;
-  padding-left: 50px;
 }
-#skills > div:first-child {
-  flex: 1 0 25%;
-}
-#skills > div:nth-child(2) {
-  flex: 1 0 35%;
-}
-#skills > div:last-child {
-  flex: 1 0 35%;
-  padding-left: 30px;
-  padding-right: 35px;
-}
+
 .p-heading {
   font-family: "Playfair Display", serif;
   font-size: 26px;
@@ -252,6 +252,16 @@ h2 {
   body {
     max-width: 1000px;
   }
+  .projects-flex {
+    column-gap: 3px;
+    justify-content: space-between;
+  }
+
+  .project-item {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 @media screen and (max-width: 640px) {
   body {
@@ -279,12 +289,40 @@ h2 {
   .image-block {
     margin-top: 50px;
   }
+  .image-block img {
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+    left: -20px;
+  }
   #skills {
     max-width: 640px;
+    margin: 0px auto;
+    flex-wrap: nowrap;
   }
-
+  #skills > :nth-child(1) {
+    max-width: 160px;
+    flex-wrap: nowrap;
+  }
+  #skills > :nth-child(2) {
+    max-width: 280px;
+    flex-wrap: nowrap;
+  }
+  #skills > :nth-child(3) {
+    max-width: 180px;
+    flex-wrap: nowrap;
+  }
+  .p-heading {
+    padding: 20px;
+  }
+  .years {
+    padding-left: 20px;
+  }
   .project-head {
     max-height: 10px;
+  }
+  .projects-flex {
+    overflow-x: scroll;
   }
   .project-image {
     min-height: 100px;
@@ -298,6 +336,9 @@ h2 {
   body {
     max-width: 320px;
   }
+  header {
+    height: 40px;
+  }
   .logo {
     display: none;
   }
@@ -309,6 +350,7 @@ h2 {
   .fixed-nav ul li {
     font-size: 14px;
     margin-right: 13px;
+    margin-top: 9px;
   }
   .navbar {
     margin: 0px auto;
@@ -318,13 +360,25 @@ h2 {
   nav ul {
     margin: 15px;
   }
+  .header-block {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
   .hello-text {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 5px;
+    padding-left: 30px;
+  }
+  .about-section {
+    max-width: 320px;
+    padding: 0px;
+    margin: 0px auto;
+    padding-bottom: 10px;
   }
   .contacts {
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     min-width: 300px;
   }
@@ -335,11 +389,15 @@ h2 {
   .h2-about-author {
     font-size: 12px;
   }
-  .image-block {
-    margin-top: 60px;
+
+  .image-block img {
+    position: relative;
+    top: -60px;
+    width: 260px;
+    left: 0px;
   }
-  .about-section {
-    padding-bottom: 10px;
+  .image-block {
+    margin-top: 0px;
   }
   .profile-summary {
     padding: 10px;
@@ -375,6 +433,9 @@ h2 {
     min-height: 100px;
     margin-bottom: 20px;
   }
+  .job {
+    padding-left: 15px;
+  }
   .btn-primary {
     font-size: 8px;
   }
@@ -384,9 +445,9 @@ h2 {
   .projects-flex {
     flex-direction: column;
   }
-  .projects-flex .col-2 {
-    width: 290px;
-  }
+  /* .projects-item {
+    margin: 0px auto;
+  } */
 
   .projects-flex .project-head {
     min-height: 80px;
