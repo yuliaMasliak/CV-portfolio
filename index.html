@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +14,8 @@
     <title>CV Masliak Yulia</title>
   </head>
   <body>
-    <div class="fixed-nav">
-      <nav class="navbar">
+    <header>
+      <div class="fixed-nav">
         <span>
           <a href="./index.html"
             ><img
@@ -28,18 +24,21 @@
               width="60"
               class="logo" /></a
         ></span>
-        <ul>
-          <li><a href="#profile" title="Go to skills">Skills</a></li>
-          <li><a href="#experience" title="Go to experience">Experience</a></li>
-          <li><a href="#projects" title="Go to projects">Projects</a></li>
-          <li><a href="#code" title="Go to code sample">My Code</a></li>
-        </ul>
-      </nav>
-    </div>
-
+        <nav class="navbar">
+          <ul>
+            <li><a href="#profile" title="Go to skills">Skills</a></li>
+            <li>
+              <a href="#experience" title="Go to experience">Experience</a>
+            </li>
+            <li><a href="#projects" title="Go to projects">Projects</a></li>
+            <li><a href="#code" title="Go to code sample">My Code</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container">
-      <div class="row">
-        <div class="col-6 about-section">
+      <div class="header-block">
+        <div class="about-section">
           <div>
             <p class="hello-text">Hi! I am</p>
             <h1 class="h1-about-author">Yulia Masliak</h1>
@@ -73,7 +72,7 @@
             </p>
           </div>
         </div>
-        <div class="col-6 image-block">
+        <div class="image-block">
           <img
             src="./images/portrait.png"
             class="img-fluid p-3"
@@ -85,7 +84,7 @@
 
     <main>
       <div class="container">
-        <div class="bg-light profile-summary">
+        <div class="profile-summary">
           <h2 class="profile-heading">Profile summary:</h2>
           <p id="profile">
             I've been working in marketing and public administration for the
@@ -101,8 +100,8 @@
             >. Any feedback is highly appreciated 😊<br /><br />
           </p>
         </div>
-        <div class="row text-left" id="skills">
-          <div class="col-4">
+        <div id="skills">
+          <div class="skills-item">
             <h2 class="p-heading">Skills:</h2>
             <ul>
               <li>JavaScript</li>
@@ -112,7 +111,7 @@
               <li>VS Code</li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="skills-item">
             <h2 class="p-heading">Courses:</h2>
             <ul>
               <li>
@@ -159,7 +158,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="skills-item">
             <h2 class="p-heading">Languages:</h2>
             <ul>
               <li>
@@ -178,63 +177,72 @@
             </ul>
           </div>
         </div>
-        <div class="row bg-light" id="experience">
+
+        <div id="experience">
           <h2 class="p-heading">Experience</h2>
-          <div class="col-4 years">
-            <ul>
-              <li>2022-present</li>
-            </ul>
+          <div class="experience-flex">
+            <div class="years">
+              <ul>
+                <li>2022-present</li>
+              </ul>
+            </div>
+            <div class="job">Learning Coding and Programming</div>
           </div>
-          <div class="col-8">Learning Coding and Programming</div>
-          <div class="col-4 years">
-            <ul>
-              <li>2019-2022</li>
-            </ul>
+          <div class="experience-flex">
+            <div class="years">
+              <ul>
+                <li>2019-2022</li>
+              </ul>
+            </div>
+            <div class="job">
+              Marketing and Public relations manager (<a
+                href="https://trademaster.ua/"
+                class="links"
+                title="trademaster.ua"
+                >Trademaster Group</a
+              >,
+              <a href="https://dim-bud.ua/" class="links" title="dim-bud.ua"
+                >Dim Group</a
+              >)
+            </div>
           </div>
-          <div class="col-8">
-            Marketing and Public relations manager (<a
-              href="https://trademaster.ua/"
-              class="links"
-              title="trademaster.ua"
-              >Trademaster Group</a
-            >,
-            <a href="https://dim-bud.ua/" class="links" title="dim-bud.ua"
-              >Dim Group</a
-            >)
+          <div class="experience-flex">
+            <div class="years">
+              <ul>
+                <li>2013-2019</li>
+              </ul>
+            </div>
+            <div class="job">
+              Chief administrative officer (<a
+                href="https://gerz-construction.com/"
+                class="links"
+                title="gerz-construction.com"
+                >GERZ Construction</a
+              >)
+            </div>
           </div>
-          <div class="col-4 years">
-            <ul>
-              <li>2013-2019</li>
-            </ul>
-          </div>
-          <div class="col-8">
-            Chief administrative officer (<a
-              href="https://gerz-construction.com/"
-              class="links"
-              title="gerz-construction.com"
-              >GERZ Construction</a
-            >)
-          </div>
-          <div class="col-4 years">
-            <ul>
-              <li>2008-2013</li>
-            </ul>
-          </div>
-          <div class="col-8">
-            Head of department (<a
-              href="https://nads.gov.ua/"
-              class="links"
-              title="nads.gov.ua"
-              >Public administration</a
-            >)
+          <div class="experience-flex">
+            <div class="years">
+              <ul>
+                <li>2008-2013</li>
+              </ul>
+            </div>
+            <div class="job">
+              Head of department (<a
+                href="https://nads.gov.ua/"
+                class="links"
+                title="nads.gov.ua"
+                >Public administration</a
+              >)
+            </div>
           </div>
         </div>
 
-        <div class="row" id="projects">
-          <h2 class="p-heading">Projects:</h2>
+        <div id="projects">
+          <h2 class="projects-heading">Projects:</h2>
         </div>
         <div class="projects-flex">
-          <div class="col-2 text-center">
+          <div class="project-item">
             <div class="project-head">
               <h2>Book-Shop</h2>
               <div class="built-with">(Built with pure JavaScript)</div>
@@ -249,13 +257,13 @@
             <a
               href="https://app.netlify.com/sites/rococo-donut-4c1689/overview"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to project website"
               >Learn more</a
             >
           </div>
 
-          <div class="col-2 text-center">
+          <div class="project-item">
             <div class="project-head">
               <h2>Weather Forecast App</h2>
               <div class="built-with">
@@ -272,12 +280,13 @@
             <a
               href="https://guileless-souffle-c5aa94.netlify.app/"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to project website"
               >Learn more</a
             >
           </div>
-          <div class="col-2 text-center">
+
+          <div class="project-item">
             <div class="project-head">
               <h2>Car-Race</h2>
               <div class="built-with">
@@ -295,12 +304,13 @@
             <a
               href="https://github.com/yuliaMasliak/async-race-api"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to repo at GitHub"
               >Learn more</a
             >
           </div>
-          <div class="col-2 text-center">
+
+          <div class="project-item">
             <div class="project-head">
               <h2>Dictionary App</h2>
               <div class="built-with">(Built with HTML, CSS and React)</div>
@@ -315,12 +325,12 @@
             <a
               href="https://fastidious-cannoli-88e429.netlify.app/"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to project website"
               >Learn more</a
             >
           </div>
-          <div class="col-2 text-center">
+          <div class="project-item">
             <div class="project-head">
               <h2>Multi-Page Website</h2>
               <div class="built-with">
@@ -337,12 +347,12 @@
             <a
               href="https://brilliant-praline-c84a06.netlify.app/index.html"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to project website"
               >Learn more</a
             >
           </div>
-          <div class="col-2 text-center">
+          <div class="project-item">
             <div class="project-head">
               <h2>Weather App</h2>
               <div class="built-with">(Built with HTML, CSS and React)</div>
@@ -357,14 +367,14 @@
             <a
               href="https://flourishing-croissant-d90f66.netlify.app/"
               target="_blank"
-              class="btn btn-primary"
+              class="btn-learn"
               title="Go to project website"
               >Learn more</a
             >
           </div>
         </div>
 
-        <div class="bg-light" id="code">
+        <div id="code">
           <h2 class="p-heading">My Code expamle</h2>
           <p class="kata"><7kyu> Find the stray number</p>
           <pre class="code-text">
