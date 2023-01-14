@@ -49,6 +49,8 @@ nav li a {
 .image-block img {
   width: 400px;
   border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 .header-block {
   display: flex;
@@ -119,7 +121,8 @@ h2 {
   border-radius: 7px;
 }
 
-.btn-learn {
+.btn-learn,
+.submit-2 {
   background-color: #5551ff;
   border: 1px solid #5551ff;
   color: white;
@@ -129,7 +132,8 @@ h2 {
   border-radius: 9px;
   text-decoration: none;
 }
-.btn-learn:hover {
+.btn-learn:hover,
+.submit-2:hover {
   background-color: white;
   border: 1px solid #5551ff;
   color: #5551ff;
@@ -137,10 +141,7 @@ h2 {
 .image-block {
   padding: 0px;
 }
-.image-block img {
-  margin-top: 50px;
-  margin-left: 30px;
-}
+
 .img-fluid {
   border-radius: 5%;
 }
@@ -226,7 +227,7 @@ tr {
 }
 .footer {
   padding-top: 30px;
-  background-color: white;
+  background-color: #f8f9fa;
   height: 80px;
 }
 #footer-author {
@@ -251,6 +252,47 @@ tr {
 .code-text-320 {
   display: none;
 }
+section {
+  background-color: white;
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.form {
+  max-width: 400px;
+  margin: 0px auto;
+}
+.title {
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  font-stretch: extra-condensed;
+}
+.name-2,
+.email-2,
+.message {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 8px;
+  padding: 8px;
+  width: 290px;
+  border: 0.3px solid rgb(198, 193, 193);
+  border-radius: 2px;
+}
+.name-2:focus,
+.email-2:focus,
+.message:focus {
+  outline: none;
+  border: 1px solid rgb(122, 168, 248);
+  box-shadow: 0 0 5px rgb(122, 168, 248);
+}
+.message {
+  height: 80px;
+  width: 290px;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     max-width: 1000px;
