@@ -45,6 +45,8 @@ nav li a {
 }
 .header-block {
   display: flex;
+  margin: 0px auto;
+  margin-top: 30px;
 }
 main,
 footer {
@@ -123,6 +125,10 @@ h2 {
 }
 .image-block {
   padding: 0px;
+}
+.image-block img {
+  margin-top: 50px;
+  margin-left: 30px;
 }
 .img-fluid {
   border-radius: 5%;
