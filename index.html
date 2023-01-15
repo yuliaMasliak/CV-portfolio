@@ -13,7 +13,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>CV Masliak Yulia</title>
   </head>
+
   <body>
+    <div class="burger-content" id="popup">
+      <ul class="burger-nav-ul" id="active-links">
+        <li><a href="#profile" title="Go to skills">Skills</a></li>
+        <li><a href="#experience" title="Go to experience">Experience</a></li>
+        <li><a href="#projects" title="Go to projects">Projects</a></li>
+        <li><a href="#code" title="Go to code sample">My Code</a></li>
+        <li><a href="#contact-form" title="Contact form">Contact form</a></li>
+      </ul>
+    </div>
     <header>
       <div class="fixed-nav">
         <span>
@@ -32,11 +42,13 @@
             </li>
             <li><a href="#projects" title="Go to projects">Projects</a></li>
             <li><a href="#code" title="Go to code sample">My Code</a></li>
+            <li><a href="#contact-form" title="Contact form">Contact</a></li>
           </ul>
         </nav>
+        <img src="./images/burger-logo.png" alt="logo" id="burger-logo" />
       </div>
     </header>
-    <div class="container">
+    <div class="container" id="start">
       <div class="header-block">
         <div class="about-section">
           <div>
@@ -80,25 +92,33 @@
         </div>
       </div>
     </div>
-
+    <div class="container">
+      <div class="profile-summary">
+        <h2 class="profile-heading">Profile summary:</h2>
+        <p id="profile">
+          I've been working in marketing and public administration for the past
+          10 years and finally decided to start learning programming as it has
+          been my long time wish.<br /><br />
+          Since July 2022, I am self-studying, devoting 8 hours a day to
+          learning programming. So far I have learned JavaScript and website
+          layout languages HTML and CSS. I've gained experience in making web
+          pages and multi-page websites, applications on pure Javascript and
+          with implementation of API. Please, take look at my
+          <a href="#projects" class="projects-link" title="Go to projects">
+            projects</a
+          >. Any feedback is highly appreciated 😊<br /><br />
+        </p>
+      </div>
+    </div>
+    <div class="sticky-up">
+      <a href="#start"
+        ><img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTUuOTk3IDEzLjM3NGwtNy4wODEgNy4wODFMNyAxOC41NGw4Ljk5Ny04Ljk5OCA5LjAwMyA5LTEuOTE2IDEuOTE2eiIvPjwvc3ZnPg=="
+          alt="arrow-up"
+      /></a>
+    </div>
     <main>
       <div class="container">
-        <div class="profile-summary">
-          <h2 class="profile-heading">Profile summary:</h2>
-          <p id="profile">
-            I've been working in marketing and public administration for the
-            past 10 years and finally decided to start learning programming as
-            it has been my long time wish.<br /><br />
-            Since July 2022, I am self-studying, devoting 8 hours a day to
-            learning programming. So far I have learned JavaScript and website
-            layout languages HTML and CSS. I've gained experience in making web
-            pages and multi-page websites, applications on pure Javascript and
-            with implementation of API. Please, take look at my
-            <a href="#projects" class="projects-link" title="Go to projects">
-              projects</a
-            >. Any feedback is highly appreciated 😊<br /><br />
-          </p>
-        </div>
         <div id="skills">
           <div class="skills-item">
             <h2 class="p-heading">Skills:</h2>
@@ -107,14 +127,13 @@
               <li>HTML, CSS</li>
               <li>React Basics</li>
               <li>Git, GitHub</li>
-              <li>VS Code</li>
             </ul>
           </div>
           <div class="skills-item">
             <h2 class="p-heading">Courses:</h2>
             <ul>
               <li>
-                <a href="https://rs.school/" class="links" title="rs.school"
+                <a href="https://rs.school/" class="links" title="RSSchool"
                   >RSSchool
                 </a>
                 (in progress): Front-End
@@ -135,9 +154,12 @@
                 (<a
                   href="https://testprovider.com/ru/search-certificate/tp62318129"
                   target="_blank"
-                  class="links"
+                  class="links hover-itvdn"
                   title="Open certificate"
-                  >Certificate</a
+                  >Certificate<span class="itvdn-onhover">
+                    <img
+                      src="./images/itvdn.png"
+                      alt="certificate" /> </span></a
                 >): JavaScript Essential
               </li>
               <li>
@@ -150,9 +172,12 @@
                 (<a
                   href="https://www.shecodes.io/certificates/0bebe6c836722c4777d9e0d23d38195f"
                   target="_blank"
-                  class="links"
+                  class="links hover-shecodes"
                   title="Open certificate"
-                  >Certificate</a
+                  >Certificate<span class="shecodes-onhover">
+                    <img
+                      src="./images/shecodes.png"
+                      alt="certificate" /> </span></a
                 >): Frontend, Responsive, React
               </li>
             </ul>
@@ -165,7 +190,10 @@
                 <a
                   href="https://www.efset.org/cert/BRrg7a"
                   target="_blank"
-                  class="links">
+                  class="links hover-efset"
+                  ><span class="efset-onhover">
+                    <img src="./images/efset.png" alt="certificate" />
+                  </span>
                   Certificate</a
                 >
                 of EFSET)
@@ -233,14 +261,19 @@
               <div class="built-with">(Built with pure JavaScript)</div>
             </div>
             <div class="project-image">
-              <img
-                src="./images/book-shop.png"
-                alt="book-shop-app"
-                width="250"
-                class="img-project img-fluid" />
+              <a
+                href="https://rococo-donut-4c1689.netlify.app/"
+                target="_blank"
+                title="Go to project website">
+                <img
+                  src="./images/book-shop.png"
+                  alt="book-shop-app"
+                  width="250"
+                  class="img-project img-fluid"
+              /></a>
             </div>
             <a
-              href="https://app.netlify.com/sites/rococo-donut-4c1689/overview"
+              href="https://rococo-donut-4c1689.netlify.app/"
               target="_blank"
               class="btn-learn"
               title="Go to project website"
@@ -385,28 +418,29 @@ function stray(numbers){
           >
         </div>
       </div>
-    </main>
-    <section class="form-section">
-      <form class="form" name="contact-me" netlify>
-        <div class="title">Leave a message</div>
-        <label for="name-2">Name</label><br />
-        <input
-          type="text"
-          name="name-2"
-          placeholder="Oleksa"
-          class="name-2" /><br />
-        <label for="email-2">Email</label><br />
-        <input
-          type="email"
-          name="email-2"
-          placeholder="oleksa@example.com"
-          class="email-2" /><br />
-        <label for="message">Message</label><br />
-        <input type="textarea" name="message" class="message" /><br />
+      <div class="form-block">
+        <form class="form" name="contact-me" id="contact-form" netlify>
+          <div class="title">Leave your message</div>
+          <label for="name-2">Name</label><br />
+          <input
+            type="text"
+            name="name-2"
+            placeholder="Oleksa"
+            class="name-2" /><br />
+          <label for="email-2">Email</label><br />
+          <input
+            type="email"
+            name="email-2"
+            placeholder="oleksa@example.com"
+            class="email-2" /><br />
+          <label for="message">Message</label><br />
+          <input type="textarea" name="message" class="message" /><br />
 
-        <input type="submit" value="Send a message" class="submit-2" />
-      </form>
-    </section>
+          <input type="submit" value="Send a message" class="submit-2" />
+        </form>
+      </div>
+    </main>
+
     <footer>
       <div class="footer">
         <div class="row">
@@ -427,4 +461,11 @@ function stray(numbers){
       </div>
     </footer>
   </body>
+  <script>
+    document.querySelector("#burger-logo").addEventListener("click", () => {
+      document
+        .querySelector(".burger-content")
+        .classList.toggle("burger-content-show");
+    });
+  </script>
 </html>

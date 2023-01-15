@@ -119,6 +119,11 @@ h2 {
 .img-project {
   border: 0.1px solid #e3e3e4;
   border-radius: 7px;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.img-project:hover {
+  transform: scale(1.2);
 }
 
 .btn-learn,
@@ -252,11 +257,10 @@ tr {
 .code-text-320 {
   display: none;
 }
-section {
-  background-color: white;
+
+.form-block {
   margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: white;
 }
 .form {
   max-width: 400px;
@@ -266,6 +270,7 @@ section {
   margin: 0px auto;
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 30px;
   font-weight: 400;
   font-size: 24px;
   font-stretch: extra-condensed;
@@ -275,24 +280,64 @@ section {
 .message {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-size: 8px;
+  font-size: 14px;
   padding: 8px;
-  width: 290px;
+  width: 390px;
   border: 0.3px solid rgb(198, 193, 193);
   border-radius: 2px;
+  color: #56565c;
 }
 .name-2:focus,
 .email-2:focus,
 .message:focus {
   outline: none;
-  border: 1px solid rgb(122, 168, 248);
-  box-shadow: 0 0 5px rgb(122, 168, 248);
+  border: 1px solid rgb(198, 122, 248);
+  box-shadow: 0 0 5px rgb(181, 122, 248);
 }
 .message {
   height: 80px;
-  width: 290px;
+}
+.submit-2 {
+  cursor: pointer;
 }
 
+.sticky-up {
+  position: sticky;
+  top: 400px;
+  color: rgb(92, 56, 209);
+  float: right;
+  width: 70px;
+}
+
+.sticky-up img {
+  width: 70px;
+  right: -30px;
+}
+.sticky-up img:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.4);
+}
+
+.efset-onhover img,
+.itvdn-onhover img,
+.shecodes-onhover img {
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+.hover-efset:hover .efset-onhover img,
+.hover-itvdn:hover .itvdn-onhover img,
+.hover-shecodes:hover .shecodes-onhover img {
+  display: block;
+  width: 25%;
+}
+
+.burger-content {
+  display: none;
+}
+#burger-logo {
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   body {
     max-width: 1000px;
@@ -312,6 +357,49 @@ section {
   body {
     max-width: 640px;
   }
+  .navbar {
+    display: none;
+  }
+
+  #burger-logo {
+    display: block;
+    position: fixed;
+    width: 55px;
+    right: 0;
+    margin-right: 15px;
+  }
+
+  .burger-nav-ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+  .burger-nav-ul li a {
+    color: #333b41;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .burger-nav-ul li {
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+
+  .burger-content-show {
+    display: block;
+    position: fixed;
+    width: 200px;
+    top: 70px;
+    right: 10px;
+    height: 229px;
+    background: #ffffff;
+    z-index: 2;
+    border-radius: 8px;
+  }
+
   .about-section {
     padding-left: 15px;
     padding-top: 20px;
@@ -515,5 +603,47 @@ section {
   }
   footer {
     font-size: 12px;
+  }
+  .form-block {
+    margin: 0px auto;
+    background-color: white;
+  }
+  .form {
+    max-width: 320px;
+    margin: 0px auto;
+    padding-left: 30px;
+  }
+  .title {
+    margin: 0px auto;
+    text-align: left;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    font-stretch: extra-condensed;
+  }
+  .name-2,
+  .email-2,
+  .message {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 8px;
+    width: 200px;
+    border: 0.3px solid rgb(198, 193, 193);
+    border-radius: 2px;
+    color: #56565c;
+  }
+  .name-2:focus,
+  .email-2:focus,
+  .message:focus {
+    outline: none;
+    border: 1px solid rgb(198, 122, 248);
+    box-shadow: 0 0 5px rgb(181, 122, 248);
+  }
+  .message {
+    height: 80px;
+  }
+  .submit-2 {
+    cursor: pointer;
   }
 }
