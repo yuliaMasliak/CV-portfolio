@@ -466,7 +466,7 @@ tr {
     font-size: 8px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   body {
     max-width: 320px;
   }
