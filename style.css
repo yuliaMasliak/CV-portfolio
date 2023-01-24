@@ -286,7 +286,7 @@ tr {
   width: 390px;
   border: 0.3px solid rgb(198, 193, 193);
   border-radius: 2px;
-  color: #56565c;
+  color: #dadadd;
 }
 .name-2:focus,
 .email-2:focus,
@@ -636,7 +636,7 @@ tr {
     width: 200px;
     border: 0.3px solid rgb(198, 193, 193);
     border-radius: 2px;
-    color: #56565c;
+    color: #bbbbc5;
   }
   .name-2:focus,
   .email-2:focus,
