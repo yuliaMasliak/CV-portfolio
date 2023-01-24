@@ -372,9 +372,11 @@ tr {
 
   .burger-nav-ul {
     list-style: none;
-    padding-left: 0px;
     margin-bottom: 0px;
     margin-top: 16px;
+    text-align: end;
+    padding: 10px;
+    background-color: #f1f1f1;
   }
   .burger-nav-ul li a {
     color: #333b41;
@@ -383,6 +385,7 @@ tr {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    text-decoration: none;
   }
   .burger-nav-ul li {
     margin-bottom: 15px;
@@ -392,8 +395,8 @@ tr {
   .burger-content-show {
     display: block;
     position: fixed;
-    width: 200px;
-    top: 70px;
+    width: 150px;
+    top: 40px;
     right: 10px;
     height: 229px;
     background: #ffffff;
@@ -539,19 +542,24 @@ tr {
     min-height: 500px;
   }
   #skills {
+    margin: 0px auto;
     flex-direction: column;
-    max-width: 320px;
+    min-width: 280px;
     padding: 10px;
     text-align: center;
   }
   #skills > div:first-child {
-    width: 100%;
+    min-width: 280px;
+    list-style-position: inside;
+  }
+  #skills > div:first-child ul {
+    padding-left: 0px;
   }
   #skills > div:nth-child(2) {
-    width: 100%;
+    min-width: 280px;
   }
   #skills > div:last-child {
-    width: 100%;
+    min-width: 280px;
     padding-left: 0px;
   }
   .profile-heading {
@@ -579,10 +587,6 @@ tr {
   .projects-flex {
     flex-direction: column;
   }
-  /* .projects-item {
-    margin: 0px auto;
-  } */
-
   .projects-flex .project-head {
     min-height: 80px;
   }
