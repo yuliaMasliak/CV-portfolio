@@ -566,29 +566,50 @@
         </div>
 
         <div id="code">
-          <h2 class="p-heading">My Code expamle</h2>
-          <p class="kata"><7kyu> Find the stray number</p>
-          <pre class="code-text">
-function stray(numbers){
-  for (let item in numbers){
-     if (numbers.indexOf(numbers[item]) ===
-         numbers.lastIndexOf(numbers[item])){
-         return numbers[item];
-         }
-  }
+          <h2 class="p-heading code-heading">My Code expamle</h2>
+          <div class="codewars-rank">
+            <img
+              src="./images/codewars.png"
+              alt="codewars-screenshot"
+            />
+
+            <pre class="code-text">
+             <p class="kata">&#60;6kyu&#62; <a href="https://www.codewars.com/kata/54b42f9314d9229fd6000d9c"  target="_blank">Duplicate Encoder</a></p>
+function duplicateEncode(word) {
+  let arr = [];
+  let res = '';
+  let wordRes = word.toLowerCase().split('');
+  wordRes.forEach((el) => {
+    let count = 0;
+    for (let i = 0; i < wordRes.length; i++) {
+      if (el == wordRes[i]) {
+        count += 1;
+      }
+    }
+    count > 1 ? (res += ')') : (res += '(');
+  });
+  return res;
 }
-</pre
-          >
-          <pre class="code-text-320">
-function stray(numbers){
-  for (let item in numbers){
-     if(numbers.indexOf(numbers[item]) === numbers.lastIndexOf(numbers[item])){
-         return numbers[item];
-         }
-  }
+</pre>
+            <pre class="code-text-320">
+             <p class="kata">&#60;6kyu&#62; <a href="https://www.codewars.com/kata/54b42f9314d9229fd6000d9c"  target="_blank">Duplicate Encoder</a></p>
+function duplicateEncode(word) {
+  let arr = [];
+  let res = '';
+  let wordRes = word.toLowerCase().split('');
+  wordRes.forEach((el) => {
+    let count = 0;
+    for (let i = 0; i < wordRes.length; i++) {
+      if (el == wordRes[i]) {
+        count += 1;
+      }
+    }
+    count > 1 ? (res += ')') : (res += '(');
+  });
+  return res;
 }
-</pre
-          >
+</pre>
+          </div>
         </div>
       </div>
       <div class="form-block">
