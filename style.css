@@ -161,7 +161,7 @@ h2 {
 
 #skills {
   display: flex;
-  max-width: 1600px;
+  max-width: 90%;
   margin: 0px auto;
 }
 
@@ -186,7 +186,7 @@ tr {
 }
 #profile {
   text-align: justify;
-  max-height: 200px;
+  max-height: fit-content;
 }
 #projects {
   max-height: 180px;
