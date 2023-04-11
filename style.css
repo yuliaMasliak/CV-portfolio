@@ -228,7 +228,7 @@ tr {
   margin-top: 15px;
 }
 .project-item img {
-  max-width: 160px;
+  max-width: 260px;
 }
 
 .code-text {
@@ -375,6 +375,9 @@ tr {
     text-align: center;
     margin-bottom: 25px;
   }
+  .project-item img {
+    max-width: 160px;
+  }
   .codewars-rank {
     margin: 0px auto;
     flex-direction: column;
@@ -491,7 +494,21 @@ tr {
     max-height: 10px;
   }
   .projects-flex {
-    overflow-x: scroll;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .project-head {
+    max-height: 10px;
+  }
+  .project-image {
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+  .project-item {
+    width: 90%;
+  }
+  .project-item img {
+    min-width: 260px;
   }
   .project-image {
     min-height: 100px;
@@ -599,20 +616,6 @@ tr {
   }
   .p-heading {
     padding: 10px;
-  }
-  .projects-flex {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .project-head {
-    max-height: 10px;
-  }
-  .project-image {
-    min-height: 100px;
-    margin-bottom: 20px;
-  }
-  .project-item {
-    width: 90%;
   }
   .job {
     padding-left: 15px;
