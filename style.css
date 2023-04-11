@@ -1,5 +1,8 @@
 :root {
-  --primary-font-family: "Poppins", sans-serif;
+  --primary-font-family: 'Poppins', sans-serif;
+}
+body {
+  scroll-behavior: smooth;
 }
 * a:hover {
   color: rgb(92, 56, 209);
@@ -80,7 +83,7 @@ footer {
   margin-bottom: 20px;
 }
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 20px;
@@ -159,7 +162,7 @@ h2 {
 }
 
 .p-heading {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 500;
   padding: 50px 50px 20px 100px;
@@ -169,7 +172,7 @@ tr {
   height: 40px;
 }
 .profile-heading {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 500;
   padding: 0px 50px 20px 50px;
@@ -198,7 +201,7 @@ tr {
   margin-bottom: 25px;
 }
 .projects-heading {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 500;
   padding: 20px 50px 20px 50px;
