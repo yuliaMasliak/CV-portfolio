@@ -1,7 +1,7 @@
 :root {
   --primary-font-family: 'Poppins', sans-serif;
 }
-body {
+html {
   scroll-behavior: smooth;
 }
 * a:hover {
