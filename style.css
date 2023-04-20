@@ -328,16 +328,12 @@ tr {
   transform: scale(1.4);
 }
 
-.efset-onhover img,
-.itvdn-onhover img,
-.shecodes-onhover img {
+.certificate-onhover img {
   position: absolute;
   display: none;
   z-index: 99;
 }
-.hover-efset:hover .efset-onhover img,
-.hover-itvdn:hover .itvdn-onhover img,
-.hover-shecodes:hover .shecodes-onhover img {
+.hover-course:hover .certificate-onhover img {
   display: block;
   width: 25%;
 }
