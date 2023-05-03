@@ -163,6 +163,19 @@ h2 {
   display: flex;
   max-width: 90%;
   margin: 0px auto;
+  column-gap: 40px;
+}
+#skills > :nth-child(1) {
+  max-width: 30%;
+  flex-wrap: nowrap;
+}
+#skills > :nth-child(2) {
+  max-width: 40%;
+  flex-wrap: nowrap;
+}
+#skills > :nth-child(3) {
+  max-width: 30%;
+  flex-wrap: nowrap;
 }
 
 .p-heading {
@@ -284,6 +297,7 @@ tr {
   font-weight: 400;
   font-size: 24px;
   font-stretch: extra-condensed;
+  font-family: 'Playfair Display', serif;
 }
 .name-2,
 .email-2,
@@ -599,19 +613,29 @@ tr {
   }
   #skills > div:first-child ul {
     padding-left: 0px;
+    list-style: none;
   }
+
   #skills > div:nth-child(2) {
     min-width: 280px;
+  }
+  #skills > div:nth-child(2) ul {
+    list-style: none;
   }
   #skills > div:last-child {
     min-width: 280px;
     padding-left: 0px;
   }
+  #skills > div:last-child ul {
+    list-style: none;
+  }
   .profile-heading {
     padding: 10px;
   }
-  .p-heading {
+  .p-heading,
+  .projects-heading {
     padding: 10px;
+    text-align: center;
   }
   .job {
     padding-left: 15px;
