@@ -216,7 +216,7 @@ tr {
   padding: 5px;
   text-align: center;
   margin-bottom: 25px;
-  width: 20%;
+  width: fit-content;
 }
 .projects-heading {
   font-family: 'Playfair Display', serif;
@@ -272,6 +272,7 @@ tr {
 }
 .project-head {
   min-height: 100px;
+  margin: 0px auto;
 }
 .project-image {
   min-height: 165px;
