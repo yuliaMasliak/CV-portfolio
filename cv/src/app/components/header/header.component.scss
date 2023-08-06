@@ -1,0 +1,47 @@
+$orange: rgb(228, 100, 15);
+$darkviolet: rgb(58, 17, 97);
+header {
+  background-color: #f8f9fa;
+  div {
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    max-width: 90%;
+    span {
+      display: flex;
+      align-items: center;
+      img {
+        margin: 10px;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      ul {
+        margin: 15px;
+        display: inline-flex;
+        gap: 20px;
+        justify-content: space-between;
+        li {
+          font-size: 18px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.801);
+          }
+          a:hover {
+            color: $orange;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.burger-content {
+  display: none;
+}
+#burger-logo {
+  display: none;
+}
