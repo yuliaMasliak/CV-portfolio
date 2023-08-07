@@ -23,12 +23,9 @@ export class ContactFormComponent {
   onSubmit() {
     this.isSubmitted = true;
     const feedbackData = {
-      Email: this.feedbackForm.get('Email')?.value || '',
-      Message: this.feedbackForm.get('Message')?.value || ''
+      Email: this.feedbackForm.get('Email')!.value || '',
+      Message: this.feedbackForm.get('Message')!.value || ''
     };
-    this.netlifyForms.submitFeedback(feedbackData).subscribe(() => {
-      this.feedbackForm.reset();
-      this.router.navigateByUrl('/success');
-    });
+    this.netlifyForms.submitFeedback(feedbackData);
   }
 }
