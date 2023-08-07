@@ -2,7 +2,12 @@ import { Component } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faPhone,
+  faShareNodes
+} from '@fortawesome/free-solid-svg-icons';
+import { Platform } from '@angular/cdk/platform';
 
 @Component({
   selector: 'app-footer',
@@ -15,4 +20,23 @@ export class FooterComponent {
   faEnvelope = faEnvelope;
   faPhone = faPhone;
   faTelegram = faTelegram;
+  faShareNodes = faShareNodes;
+
+  constructor(private platform: Platform) {}
+  shareProfile() {
+    if (this.platform.isBrowser) {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: 'Shared Content',
+            text: 'Check out this content',
+            url: 'https://cv-masliak-yulia-front-end.netlify.app/'
+          })
+          .then(() => console.log('Shared successfully'))
+          .catch((error) => console.error('Sharing failed', error));
+      } else {
+        console.warn('Web Share API not supported in this browser.');
+      }
+    }
+  }
 }

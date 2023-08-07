@@ -10,39 +10,27 @@
       <ul>
         <li
           ><a
-            href="#profile"
-            title="Go to skills"
-            >Skills</a
-          ></li
-        >
-        <li>
-          <a
-            href="#experience"
-            title="Go to experience"
-            >Experience</a
-          >
-        </li>
-        <li
-          ><a
             href="#projects"
             title="Go to projects"
             >Projects</a
           ></li
         >
-        <li
-          ><a
-            href="#code"
-            title="Go to code sample"
-            >My Code</a
-          ></li
-        >
+
         <li
           ><a
             href="#contact-form"
             title="Contact form"
-            >Contact</a
+            >Contact me</a
           ></li
         >
+        <li
+          ><button (click)="downloadCV()"
+            >Download CV&nbsp;
+            <fa-icon
+              [icon]="faCircleDown"
+              size="lg"
+            ></fa-icon></button
+        ></li>
       </ul>
     </nav>
   </div>
