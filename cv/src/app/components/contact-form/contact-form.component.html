@@ -1,5 +1,6 @@
 <div class="form-block">
   <form
+    *ngIf="!isSubmitted"
     class="form"
     name="contact-me"
     id="contact-form"
@@ -24,9 +25,15 @@
 
     <button
       mat-raised-button
+      type="submit"
       (click)="submit()"
       >SUBMIT</button
     >
   </form>
+  <div
+    *ngIf="isSubmitted"
+    class="success"
+  >
+    Message sent successfully!
+  </div>
 </div>
-<div class="modal-overlap"></div>
