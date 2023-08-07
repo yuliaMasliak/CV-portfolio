@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { NetlifyFormsService } from 'src/app/shared/form-handler.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,8 +10,24 @@ import { Component } from '@angular/core';
 })
 export class ContactFormComponent {
   isSubmitted: boolean = false;
-  submit() {
-    event?.preventDefault();
-    this.isSubmitted = true;
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private netlifyForms: NetlifyFormsService
+  ) {}
+
+  feedbackForm = this.fb.group({
+    Email: ['', [Validators.email, Validators.required]],
+    Message: ['', [Validators.required]]
+  });
+  onSubmit() {
+    const feedbackData = {
+      Email: this.feedbackForm.get('Email')?.value || '',
+      Message: this.feedbackForm.get('Message')?.value || ''
+    };
+    this.netlifyForms.submitFeedback(feedbackData).subscribe(() => {
+      this.feedbackForm.reset();
+      this.router.navigateByUrl('/success');
+    });
   }
 }
