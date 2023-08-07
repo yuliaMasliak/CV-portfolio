@@ -47,3 +47,14 @@ main {
     max-width: 100% !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .about-section {
+    width: 90% !important;
+  }
+  .image-block {
+    width: 90% !important;
+  }
+  .image-block img {
+    max-width: 60% !important;
+  }
+}
