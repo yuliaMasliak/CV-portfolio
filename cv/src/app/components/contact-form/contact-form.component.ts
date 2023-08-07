@@ -21,6 +21,7 @@ export class ContactFormComponent {
     Message: ['', [Validators.required]]
   });
   onSubmit() {
+    this.isSubmitted = true;
     const feedbackData = {
       Email: this.feedbackForm.get('Email')?.value || '',
       Message: this.feedbackForm.get('Message')?.value || ''

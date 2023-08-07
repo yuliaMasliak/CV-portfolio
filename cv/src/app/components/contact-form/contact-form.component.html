@@ -5,13 +5,14 @@
     name="contact-me"
     id="contact-form"
     [formGroup]="feedbackForm"
+    (ngSubmit)="onSubmit()"
   >
     <div class="title">Leave your message</div>
     <br />
     <mat-form-field>
       <mat-label>Enter your email</mat-label>
       <input
-        formControlName="email"
+        formControlName="Email"
         type="email"
         name="email"
         matInput
@@ -21,7 +22,7 @@
     <mat-form-field class="example-full-width">
       <mat-label>Leave a comment</mat-label>
       <textarea
-        formControlName="message"
+        formControlName="Message"
         matInput
         placeholder="Ex. It makes me feel..."
       ></textarea></mat-form-field
