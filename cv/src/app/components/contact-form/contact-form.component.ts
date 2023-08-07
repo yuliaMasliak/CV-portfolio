@@ -17,7 +17,7 @@ export class ContactFormComponent {
   ) {}
 
   feedbackForm = this.fb.group({
-    Email: ['', [Validators.email]],
+    Email: ['', [Validators.email, Validators.required]],
     Message: ['', [Validators.required]]
   });
   onSubmit() {
@@ -26,6 +26,8 @@ export class ContactFormComponent {
       Email: this.feedbackForm.get('Email')!.value || '',
       Message: this.feedbackForm.get('Message')!.value || ''
     };
-    this.netlifyForms.submitFeedback(feedbackData);
+    this.netlifyForms.submitFeedback(feedbackData).subscribe(() => {
+      this.feedbackForm.reset();
+    });
   }
 }
