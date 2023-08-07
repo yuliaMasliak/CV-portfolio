@@ -3,15 +3,26 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main/main.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SloganComponent } from './slogan/slogan.component';
 
 const routes: Routes = [
   {
     path: 'about',
     component: MainComponent
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent
   }
 ];
 @NgModule({
-  declarations: [MainComponent, SkillsComponent],
+  declarations: [
+    MainComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    SloganComponent
+  ],
   imports: [CommonModule, RouterModule.forChild(routes)]
 })
 export class CoreModule {}

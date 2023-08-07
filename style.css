@@ -5,53 +5,6 @@
   max-width: 130px;
   min-height: 65px;
 }
-.img-project {
-  border: 0.1px solid #e3e3e4;
-  border-radius: 7px;
-  cursor: pointer;
-  transform: scale(0.9);
-}
-.img-project:hover {
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-}
-
-.btn-learn,
-.submit-2 {
-  background-color: #5551ff;
-  border: 1px solid #5551ff;
-  color: white;
-  font-size: 12px;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-  border-radius: 9px;
-  text-decoration: none;
-}
-.btn-learn:hover,
-.submit-2:hover {
-  background-color: white;
-  border: 1px solid #5551ff;
-  color: #5551ff;
-}
-
-#skills {
-  display: flex;
-  max-width: 90%;
-  margin: 0px auto;
-  column-gap: 40px;
-}
-#skills > :nth-child(1) {
-  max-width: 30%;
-  flex-wrap: nowrap;
-}
-#skills > :nth-child(2) {
-  max-width: 40%;
-  flex-wrap: nowrap;
-}
-#skills > :nth-child(3) {
-  max-width: 30%;
-  flex-wrap: nowrap;
-}
 
 .p-heading {
   font-family: 'Playfair Display', serif;
@@ -69,36 +22,7 @@ tr {
   font-weight: 500;
   padding: 0px 50px 20px 50px;
 }
-.projects-link {
-  text-decoration: none;
-}
-#profile {
-  text-align: justify;
-  max-height: fit-content;
-}
-#projects {
-  max-height: 180px;
-}
-.projects-flex {
-  display: flex;
-  column-gap: 5px;
-  row-gap: 45px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
-.project-item {
-  padding: 5px;
-  text-align: center;
-  margin-bottom: 25px;
-  width: fit-content;
-}
-.projects-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 500;
-  padding: 20px 50px 20px 50px;
-}
 .experience-flex {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -155,50 +79,6 @@ tr {
 }
 .code-text-320 {
   display: none;
-}
-
-.form-block {
-  margin: 0px auto;
-  background-color: white;
-}
-.form {
-  max-width: 400px;
-  margin: 0px auto;
-}
-.title {
-  margin: 0px auto;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-weight: 400;
-  font-size: 24px;
-  font-stretch: extra-condensed;
-  font-family: 'Playfair Display', serif;
-}
-.name-2,
-.email-2,
-.message {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  padding: 8px;
-  width: 390px;
-  border: 0.3px solid rgb(198, 193, 193);
-  border-radius: 2px;
-  color: #dadadd;
-}
-.name-2:focus,
-.email-2:focus,
-.message:focus {
-  outline: none;
-  border: 1px solid rgb(198, 122, 248);
-  box-shadow: 0 0 5px rgb(181, 122, 248);
-}
-.message {
-  height: 80px;
-}
-.submit-2 {
-  cursor: pointer;
 }
 
 .sticky-up {

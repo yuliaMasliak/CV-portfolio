@@ -5,6 +5,7 @@
         src="./assets/logo.gif"
         alt="rsschool3-logo"
         width="80"
+        (click)="toHome()"
     /></span>
     <nav>
       <ul>
@@ -12,14 +13,15 @@
           ><a
             href="#projects"
             title="Go to projects"
+            (click)="toProjects()"
             >Projects</a
           ></li
         >
 
         <li
           ><a
-            href="#contact-form"
             title="Contact form"
+            (click)="toggleContactForm()"
             >Contact me</a
           ></li
         >
@@ -40,3 +42,10 @@
   alt="logo"
   id="burger-logo"
 />
+<div *ngIf="isModal"
+  ><app-contact-form> </app-contact-form>
+  <div
+    class="modal-overlap"
+    (click)="toggleContactForm()"
+  ></div>
+</div>
