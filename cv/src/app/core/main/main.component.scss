@@ -36,12 +36,14 @@ main {
 @media screen and (max-width: 1000px) {
   .container {
     flex-direction: column;
+    justify-content: center;
   }
   .about-section {
     width: 60% !important;
   }
   .image-block {
     width: 60% !important;
+    text-align: center;
   }
   .image-block img {
     max-width: 100% !important;
