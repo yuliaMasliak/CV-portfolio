@@ -17,7 +17,7 @@ export class ContactFormComponent {
   ) {}
 
   feedbackForm = this.fb.group({
-    Email: ['', [Validators.email, Validators.required]],
+    Email: ['', [Validators.email]],
     Message: ['', [Validators.required]]
   });
   onSubmit() {
