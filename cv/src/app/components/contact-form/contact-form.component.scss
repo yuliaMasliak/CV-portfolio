@@ -1,7 +1,8 @@
 .form-block {
+  width: 40%;
   height: fit-content;
   z-index: 3;
-  padding: 10px;
+  padding: 3%;
   position: fixed;
   float: left;
   left: 50%;
@@ -11,7 +12,7 @@
   border-radius: 5px;
 
   .form {
-    max-width: 400px;
+    width: 100%;
     margin: 0px auto;
     .title {
       margin: 0px auto;
@@ -21,32 +22,9 @@
       font-weight: 400;
       font-size: 24px;
       font-stretch: extra-condensed;
-      font-family: 'Playfair Display', serif;
     }
-    .name-2,
-    .email-2,
-    .message {
-      margin-top: 5px;
-      margin-bottom: 10px;
-      font-size: 14px;
-      padding: 8px;
-      width: 390px;
-      border: 0.3px solid rgb(198, 193, 193);
-      border-radius: 2px;
-      color: #dadadd;
-    }
-    .name-2:focus,
-    .email-2:focus,
-    .message:focus {
-      outline: none;
-      border: 1px solid rgb(198, 122, 248);
-      box-shadow: 0 0 5px rgb(181, 122, 248);
-    }
-    .message {
-      height: 80px;
-    }
-    .submit-2 {
-      cursor: pointer;
+    mat-form-field {
+      width: 100%;
     }
   }
 }

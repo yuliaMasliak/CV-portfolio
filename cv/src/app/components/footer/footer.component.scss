@@ -7,12 +7,13 @@ $darkviolet: rgb(58, 17, 97);
   justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
-  height: 80px;
+  height: 100px;
 }
 fa-icon {
   color: $darkviolet;
   cursor: pointer;
 }
+
 fa-icon:hover {
   transition: all 0.3s;
   color: $orange;

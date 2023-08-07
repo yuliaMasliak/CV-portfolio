@@ -7,14 +7,27 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { BurgerComponent } from './components/burger/burger.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, ContactFormComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContactFormComponent,
+    BurgerComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

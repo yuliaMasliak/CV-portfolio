@@ -34,6 +34,7 @@ header {
           a:hover {
             color: $orange;
             transition: 0.3s;
+            cursor: pointer;
           }
 
           button {
@@ -90,11 +91,8 @@ header {
   }
 }
 
-.burger-content {
-  display: none;
-}
 #burger-logo {
-  display: none;
+  width: 50px;
 }
 
 .modal-overlap {
@@ -104,4 +102,5 @@ header {
   top: 0;
   bottom: 0;
   background-color: #d6d6e77a;
+  cursor: pointer;
 }

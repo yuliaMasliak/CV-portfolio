@@ -28,12 +28,10 @@ $animationSpeed: 30s;
 
 .slider {
   background: white;
-
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
 
   &::before,
   &::after {

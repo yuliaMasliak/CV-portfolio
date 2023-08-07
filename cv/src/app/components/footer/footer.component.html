@@ -8,7 +8,7 @@
     >
       <fa-icon
         [icon]="faGithub"
-        size="lg"
+        [@openClose]="isOpen ? 'open' : 'closed'"
       ></fa-icon>
     </a>
     <a
@@ -19,7 +19,7 @@
     >
       <fa-icon
         [icon]="faLinkedinIn"
-        size="lg"
+        [@openClose]="isOpen ? 'open' : 'closed'"
       ></fa-icon>
     </a>
     <a
@@ -30,7 +30,7 @@
     >
       <fa-icon
         [icon]="faEnvelope"
-        size="lg"
+        [@openClose]="isOpen ? 'open' : 'closed'"
       ></fa-icon>
     </a>
     <a
@@ -41,7 +41,7 @@
     >
       <fa-icon
         [icon]="faPhone"
-        size="lg"
+        [@openClose]="isOpen ? 'open' : 'closed'"
       ></fa-icon>
     </a>
     <a
@@ -52,7 +52,7 @@
     >
       <fa-icon
         [icon]="faTelegram"
-        size="lg"
+        [@openClose]="isOpen ? 'open' : 'closed'"
       ></fa-icon>
     </a>
     <a
@@ -62,8 +62,8 @@
     >
       <fa-icon
         [icon]="faShareNodes"
+        [@openClose]="isOpen ? 'open' : 'closed'"
         (click)="shareProfile()"
-        size="lg"
       ></fa-icon>
     </a>
   </div>

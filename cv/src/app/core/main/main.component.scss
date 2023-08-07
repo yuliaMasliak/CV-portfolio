@@ -8,13 +8,16 @@ main {
     max-width: 1440px;
     gap: 4em;
     align-items: center;
-    height: 60vh;
+    margin-bottom: 30px;
     .about-section {
       width: 30%;
       text-align: justify;
       .hello-text {
         font-size: 26px;
         font-weight: 500;
+      }
+      h5 {
+        margin-bottom: 15px;
       }
       .about {
         font-size: 16px;
@@ -23,10 +26,24 @@ main {
     .image-block {
       width: 30%;
       img {
-        max-width: 100%;
+        max-width: 80%;
         border-radius: 8px;
         opacity: 90%;
       }
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .about-section {
+    width: 60% !important;
+  }
+  .image-block {
+    width: 60% !important;
+  }
+  .image-block img {
+    max-width: 100% !important;
   }
 }

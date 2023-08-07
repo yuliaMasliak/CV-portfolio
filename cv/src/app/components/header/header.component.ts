@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
+import { ScreenService } from 'src/app/shared/get-screen-width.service';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,12 @@ import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  isSmallScreen: boolean = false;
+  constructor(private router: Router, private screenService: ScreenService) {}
   faCircleDown = faCircleDown;
   isModal = false;
+  isBurgerMenu: boolean = false;
+
   downloadCV() {
     const link = document.createElement('a');
     link.href = '../../../assets/CV-Y_Masliak-Web-Developer.pdf';
@@ -26,5 +30,16 @@ export class HeaderComponent {
   }
   toggleContactForm() {
     this.isModal = !this.isModal;
+  }
+  ngOnInit(): void {
+    this.isSmallScreen = this.screenService.getScreenWidth() <= 640;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.isSmallScreen = this.screenService.getScreenWidth() <= 640;
+  }
+  toggleBurger() {
+    this.isBurgerMenu = !this.isBurgerMenu;
   }
 }

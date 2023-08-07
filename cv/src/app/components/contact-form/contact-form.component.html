@@ -6,32 +6,27 @@
     netlify
   >
     <div class="title">Leave your message</div>
-    <label for="name-2">Name</label><br />
-    <input
-      type="text"
-      name="name-2"
-      placeholder="Name"
-      class="name-2"
-    /><br />
-    <label for="email-2">Email</label><br />
-    <input
-      type="email"
-      name="email-2"
-      placeholder="example@example.com"
-      class="email-2"
-    /><br />
-    <label for="message">Message</label><br />
-    <input
-      type="textarea"
-      name="message"
-      class="message"
-    /><br />
+    <br />
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input
+        matInput
+        placeholder="pat@example.com"
+      /> </mat-form-field
+    ><br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea
+        matInput
+        placeholder="Ex. It makes me feel..."
+      ></textarea></mat-form-field
+    ><br />
 
-    <input
-      type="submit"
-      value="Send a message"
-      class="submit-2"
-    />
+    <button
+      mat-raised-button
+      (click)="submit()"
+      >SUBMIT</button
+    >
   </form>
 </div>
 <div class="modal-overlap"></div>
