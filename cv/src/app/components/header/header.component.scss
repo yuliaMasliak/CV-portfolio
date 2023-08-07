@@ -97,7 +97,7 @@ header {
 
 .modal-overlap {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   bottom: 0;
