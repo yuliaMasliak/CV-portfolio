@@ -58,4 +58,10 @@
     (click)="toggleContactForm()"
   ></div>
 </div>
-<div *ngIf="isBurgerMenu"><app-burger></app-burger> </div>
+<div *ngIf="isBurgerMenu"
+  ><app-burger></app-burger>
+  <div
+    class="modal-overlap"
+    (click)="toggleBurger()"
+  ></div
+></div>
