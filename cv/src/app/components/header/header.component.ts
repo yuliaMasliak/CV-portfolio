@@ -2,6 +2,13 @@ import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
 import { ScreenService } from 'src/app/shared/get-screen-width.service';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +21,7 @@ export class HeaderComponent {
   faCircleDown = faCircleDown;
   isModal = false;
   isBurgerMenu: boolean = false;
-
+  burgerState: 'open' | 'closed' = 'closed';
   downloadCV() {
     const link = document.createElement('a');
     link.href = '../../../assets/CV-Y_Masliak-Web-Developer.pdf';
@@ -33,6 +40,7 @@ export class HeaderComponent {
   }
   ngOnInit(): void {
     this.isSmallScreen = this.screenService.getScreenWidth() <= 640;
+    this.burgerState = this.isBurgerMenu ? 'open' : 'closed';
   }
 
   @HostListener('window:resize', ['$event'])

@@ -2,9 +2,13 @@ $orange: rgb(228, 100, 15);
 $darkviolet: rgb(58, 17, 97);
 .burger-content {
   position: absolute;
+  top: 0px;
   width: fit-content;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #dbe6f0f3;
+  z-index: 99;
+  border-bottom-right-radius: 8px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   ul {
     list-style: none;
     margin-bottom: 0px;
