@@ -14,7 +14,6 @@ import {
   style,
   animate,
   transition
-  // ...
 } from '@angular/animations';
 
 @Component({
