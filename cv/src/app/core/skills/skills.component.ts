@@ -28,6 +28,10 @@ export class SkillsComponent {
       name: 'RxJs'
     },
     {
+      img: '../../../assets/commercetool.png',
+      name: 'Commercetools'
+    },
+    {
       img: '../../../assets/node.png',
       name: 'NodeJs'
     },
@@ -38,6 +42,10 @@ export class SkillsComponent {
     {
       img: '../../../assets/ws.png',
       name: 'WebSocket'
+    },
+    {
+      img: '../../../assets/jest.png',
+      name: 'Jest'
     },
     {
       img: '../../../assets/wp.png',
@@ -61,3 +69,4 @@ export class SkillsComponent {
     }
   ];
 }
+

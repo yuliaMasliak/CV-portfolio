@@ -6,7 +6,7 @@
   );
 }
 
-$animationSpeed: 30s;
+$animationSpeed: 20s;
 
 // Animation
 @keyframes scroll {
@@ -14,7 +14,7 @@ $animationSpeed: 30s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-150px * 6));
+    transform: translateX(calc(-100px * 5));
   }
 }
 
@@ -68,3 +68,4 @@ $animationSpeed: 30s;
     justify-content: center;
   }
 }
+
