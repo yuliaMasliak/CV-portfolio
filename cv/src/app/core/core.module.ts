@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
+  },
+  {
+    path: '**',
+    component: MainComponent
   }
 ];
 @NgModule({
@@ -26,3 +30,4 @@ const routes: Routes = [
   imports: [CommonModule, RouterModule.forChild(routes)]
 })
 export class CoreModule {}
+
