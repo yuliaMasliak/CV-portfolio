@@ -1,0 +1,16 @@
+<div class="slider">
+  <div class="slide-track">
+    <div
+      class="slide"
+      *ngFor="let slide of skills"
+    >
+      <div class="skill-img">
+        <img
+          src="{{ slide.img }}"
+          alt="{{ slide.name }}"
+          width="70"
+      /></div>
+      <div class="skill-name">{{ slide.name }}</div>
+    </div>
+  </div>
+</div>
