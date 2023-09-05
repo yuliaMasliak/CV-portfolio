@@ -8,7 +8,7 @@ const routes: Routes = [
       import('./core/core.module').then((mod) => mod.CoreModule)
   },
   { path: '', redirectTo: '/main', pathMatch: 'full' },
-  { path: '*', redirectTo: '/main', pathMatch: 'full' }
+  { path: '**', redirectTo: '/main', pathMatch: 'full' }
 ];
 
 @NgModule({
