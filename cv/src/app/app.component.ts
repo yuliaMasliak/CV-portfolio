@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'Portfolio Yulia Masliak';
   constructor(private router: Router) {}
   ngOnInit(): void {
-    this.router.navigate(['/main/about']);
+    // this.router.navigate(['/main/about']);
   }
 }
+
