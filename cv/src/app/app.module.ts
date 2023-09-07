@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { BurgerComponent } from './components/burger/burger.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
